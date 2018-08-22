@@ -8,10 +8,9 @@ const server = Hapi.server({
 // Add the route
 server.route({
   method: 'GET',
-  path: '/hello',
+  path: '/',
   handler(request, h) {
-    h.response.header('Connection', 'close', { append: true });
-    return 'hello world';
+    return h.response({ success: true, message: 'Hello World' }).header('Connection', 'close', { append: true });
   }
 });
 // Start the server

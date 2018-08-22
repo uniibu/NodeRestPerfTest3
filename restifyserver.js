@@ -2,7 +2,7 @@ const restify = require('restify');
 
 function respond(req, res, next) {
   res.set('Connection', 'close');
-  res.send('Hello World!');
+  res.send({ success: true, message: 'Hello World' });
   next();
 }
 const server = restify.createServer();
