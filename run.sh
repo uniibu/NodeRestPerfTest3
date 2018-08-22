@@ -60,6 +60,17 @@ echo ""
 sleep 2
 
 echo ""
+echo Koa2 with koa-router
+echo -e "\nKoa2Router" >> results.txt ;
+node koa2router.js &
+sleep 2
+eval $BENCH
+echo Closing koa2router ;
+kill -0 $! && kill $!
+echo ""
+sleep 2
+
+echo ""
 echo Fastify
 echo -e "\nFastify" >> results.txt ;
 node fastifyserver.js &
