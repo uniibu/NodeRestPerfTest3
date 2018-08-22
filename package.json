@@ -17,9 +17,10 @@
     "start": "bash run.sh"
   },
   "dependencies": {
+    "express": "*",
+    "fastify": "^1.10.0",
     "hapi": "*",
     "koa": "*",
-    "express": "*",
     "restify": "*"
   }
 }
