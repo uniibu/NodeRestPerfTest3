@@ -1,13 +1,23 @@
-KOA2
+Preparation
 
-https://www.npmjs.com/package/koa2
+Install `apache2-utils` first as a sudo user
+```bash
+sudo apt-get install apache2-utils
+```
 
+Clone this repo and rename to `perftest`
+```bash
+git clone https://github.com/uniibu/NodeRestPerfTest3.git perftest && cd perftest
+```
 
-Adonis
+Change permission of `install.sh` and `run.sh`
+```bash
+sudo chmod +x install.sh
+sudo chmod +x run.sh
+```
 
-http://www.adonisjs.com/docs/3.2/installation#_creating_new_project
+Run the `install.sh` 
+```bash
+./install.sh
+```
 
-
-Sailsjs
-
-http://sailsjs.com/get-started
