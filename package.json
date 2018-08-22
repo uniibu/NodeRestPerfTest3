@@ -13,6 +13,9 @@
     "url": "https://github.com/uniibu/NodeRestPerfTest3/issues"
   },
   "homepage": "https://github.com/uniibu/NodeRestPerfTest3#readme",
+  "scripts": {
+    "start": "bash run.sh"
+  },
   "dependencies": {
     "hapi": "*",
     "koa": "*",

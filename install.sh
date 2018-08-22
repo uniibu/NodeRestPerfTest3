@@ -6,3 +6,4 @@ nvm install 10
 nvm use 10
 npm install yarn -g
 yarn
+yarn start
