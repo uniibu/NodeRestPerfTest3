@@ -1,7 +1,7 @@
 TOOL="${1:-apache}"
 BENCH="ab -k -n 50000 -c 100 http://127.0.0.1:8000/ | grep 'Time taken for tests:\|Requests per second:\|Time per request:' >> results.txt"
 if [[ $TOOL == 'cannon' ]]; then
-BENCH="autocannon -c 100 -d 10 http://127.0.0.1:8000/ >> results.txt"
+BENCH="autocannon -c 100 -d 10 http://127.0.0.1:8000/ |& awk '/Req\/Sec/ {print $1" = "$2;}' | tee -a results.txt"
 fi
 
 echo Staring Perfomance Test using $TOOL
