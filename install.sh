@@ -5,5 +5,6 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 10
 nvm use 10
 npm install yarn -g
+npm install autocannon -g
 yarn
 yarn start
