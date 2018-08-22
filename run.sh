@@ -64,7 +64,7 @@ echo ""
 sleep 2
 
 echo Performance Test complete!
-echo "-------------RESULT-------------"
+echo -e "\n-------------RESULT-------------"
 cat results.txt
 exit
 
