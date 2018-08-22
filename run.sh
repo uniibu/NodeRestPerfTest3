@@ -26,8 +26,9 @@ sleep 2
 eval $BENCH
 echo Closing restifyserver ;
 kill -0 $! && kill $!
-
 sleep 2
+
+echo ""
 echo Express
 echo -e "\nExpress" >> results.txt
 node expressserver.js &

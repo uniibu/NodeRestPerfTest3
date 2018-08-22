@@ -21,6 +21,7 @@
     "fastify": "^1.10.0",
     "hapi": "*",
     "koa": "*",
+    "koa-router": "^7.4.0",
     "restify": "*"
   }
 }
