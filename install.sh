@@ -4,7 +4,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install 10
 nvm use 10
-npm install hapi
-npm install express
-npm install restify
-npm install koa
+npm install yarn -g
+yarn
