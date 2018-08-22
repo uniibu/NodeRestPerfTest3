@@ -40,5 +40,5 @@ echo ""
 
 echo Performance Test complete!
 echo ""
-echo $(cat results.txt)
+cat results.txt
 
